@@ -1,6 +1,5 @@
 from queue import PriorityQueue
 
-# Graph representation
 graph = {
     'A': [('B', 1), ('C', 3)],
     'B': [('D', 3), ('E', 6)],
@@ -11,7 +10,6 @@ graph = {
     'G': []
 }
 
-# Heuristic values
 heuristic = {
     'A': 6,
     'B': 4,
@@ -52,8 +50,7 @@ def astar(start, goal):
                 pq.put((priority, neighbor))
 
                 came_from[neighbor] = current
-
-    # Reconstruct path
+                
     path = []
     node = goal
 
@@ -65,7 +62,6 @@ def astar(start, goal):
 
     return path, cost_so_far[goal]
 
-# Run algorithm
 path, cost = astar('A', 'G')
 
 print("Shortest Path:", path)

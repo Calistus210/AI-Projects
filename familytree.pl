@@ -1,8 +1,4 @@
-% =========================================
 % FAMILY TREE ASSIGNMENT (PROLOG)
-% =========================================
-
-% -------- FACTS --------
 
 % Gender
 male(john).
@@ -36,8 +32,6 @@ parent(jane, mark).
 
 parent(susan, anna).
 parent(jane, anna).
-
-% -------- RULES --------
 
 % Father
 father(X, Y) :-

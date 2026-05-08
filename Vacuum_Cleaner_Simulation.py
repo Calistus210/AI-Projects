@@ -1,12 +1,9 @@
-# Vacuum Cleaner Agent Simulation
 
-# Environment
 rooms = {
     'A': 'Dirty',
     'B': 'Dirty'
 }
 
-# Vacuum agent location
 current_room = 'A'
 
 def clean_room(room):
@@ -19,7 +16,6 @@ def clean_room(room):
     else:
         print(f"Room {room} is already Clean.")
 
-# Run agent
 for room in rooms:
 
     current_room = room
